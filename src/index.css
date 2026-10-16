@@ -1,0 +1,105 @@
+:root{
+  --primary-color:rgb(216, 193, 165);
+  --hover-color:rgb(176, 116, 44);
+}
+.counter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.counter_heading{
+    background-color: rgb(253, 255, 254);
+    margin: 2rem;
+   
+}
+.counter_button{
+  text-decoration: none;
+  all:unset;
+  border: 2px solid black;
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.counter_paragraph{
+  font-weight:bold;
+  font-size: large;
+  font-style: italic;
+}
+.input_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.input__labels{
+  padding: 1rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.break_line{
+  color: black;
+}
+span{
+  margin: 0.5rem;
+}
+.input__button{
+  all:unset;
+  margin-top: 1rem;
+  padding: 0.15rem 1rem;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.input_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-style: italic;
+}
+.input__text{
+  font-style: normal;
+  font-weight: normal;
+}
+.input__para{
+  font-weight: bold;
+  font-style: italic;
+}
+.prop__counter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prop_handling{
+  color: rgb(6, 73, 35);
+}
+.nav__button{
+  all:unset;
+  margin-top:3rem;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  background-color: var(--hover-color);
+  font-weight: bolder;
+  cursor: pointer;
+}
+.lists {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    margin: 5rem;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+}
+.input__error{
+  color: red;
+}
