@@ -1,8 +1,10 @@
+@import "tailwindcss";
+
 :root{
   --primary-color:rgb(216, 193, 165);
   --hover-color:rgb(176, 116, 44);
 }
-.counter{
+/* .counter{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,4 +111,4 @@ span{
   padding:5px;
   margin:2rem 2rem;
   cursor:pointer
-}
+} */

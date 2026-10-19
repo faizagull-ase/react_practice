@@ -7,6 +7,7 @@ import Query from './components/Query'
 import Users from './components/Users';
 import CreateUser from './components/CreateUser';
 import Redux from './components/Redux';
+import Tailwindtest from './components/Tailwindtest';
 
 export default function App() {
   const data = {
@@ -24,6 +25,7 @@ export default function App() {
           <Route path='/query' element={<Query/>}/>
           <Route path='createuser' element={<CreateUser/>}/>
           <Route path='store' element={<Redux/>}/>
+          <Route path='/tailwind' element={<Tailwindtest/>}/>
         </Routes>
       </BrowserRouter>
     </themeContext.Provider>

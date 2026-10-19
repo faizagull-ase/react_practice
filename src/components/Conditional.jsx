@@ -25,11 +25,11 @@ export default function Conditional({ value }) {
     ]
     return (
         <>
-            <div className='Dashboard__card'>
+            <div className='m-2'>
                 {collection.
                     map((c) =>
                     (
-                        <span className='lists' key={c.id}>
+                        <span className='inline-flex gap-4 items-center py-3 px-4 m-20 bg-white rounded-lg' key={c.id}>
                             <span>Name is:<strong>{c.name}</strong></span>
                             <span>Email is:<strong>{c.email}</strong></span>
                         </span>
