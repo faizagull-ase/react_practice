@@ -12,13 +12,8 @@ const validationSchema = Yup.object({
 export default function Input() {
     const navigate = useNavigate();
     const theme = useContext(themeContext);
-    const [isLoggedIn,setLoggedIn] = useState(false);
+    const [isLoggedIn, setLoggedIn] = useState(false);
 
-    function handleSubmit(values, { resetForm }) {
-        console.log(`Name:${values.name} Email:${values.email}`);
-        setLoggedIn(true);
-        resetForm();
-    }
 
     return (
         <>
@@ -27,7 +22,11 @@ export default function Input() {
                 <Formik
                     initialValues={{ name: '', email: '' }}
                     validationSchema={validationSchema}
-                    onSubmit={handleSubmit}
+                    onSubmit={(values, { resetForm }) => {
+                        console.log(`Name:${values.name} Email:${values.email}`);
+                        setLoggedIn(true);
+                        resetForm();
+                    }}
                 >
                     {({ values }) => (
                         <>
@@ -57,7 +56,7 @@ export default function Input() {
                     Go to Counter Page
                 </button>
                 <p>Current theme stored in context is : {theme}</p>
-                {isLoggedIn && <button className='nav__button' onClick={()=>navigate('/conditional')}>
+                {isLoggedIn && <button className='nav__button' onClick={() => navigate('/conditional')}>
                     Go to dashboard
                 </button>}
             </div>
