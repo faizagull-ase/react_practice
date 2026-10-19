@@ -103,3 +103,10 @@ span{
 .input__error{
   color: red;
 }
+.create-user{
+  all:unset;
+  border:2px solid black;
+  padding:5px;
+  margin:2rem 2rem;
+  cursor:pointer
+}
